@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans",sans-serif;
+}
+.nav-body{
+    padding: 10px 40px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.border{
+    border-bottom: 1px solid #b0aeae;
+}
+.logo img{
+    width: 50px;
+    margin-bottom: 10px;
+}
+.nav-links ul{
+    display: flex;
+}
+.nav-links li{
+    list-style: none;
+    margin: 10px 25px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+.nav-links li{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #333; /* Set your text color */
+    transition: color 0.3s ease;
+}
+.nav-links li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Set the underline thickness */
+    bottom: 0;
+    left: 0;
+    background-color: #333; /* Set the underline color */
+    transform: scaleX(0); /* Initial state: no underline */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease; /* Add a smooth transform transition */
+}
+.nav-links li:hover{
+    cursor: pointer;
+}
+.nav-links li:hover::after {
+    
+    transform: scaleX(1); /* Fully reveal the underline */
+    transform-origin: bottom left;
+    transition-delay: 0.3s; /* Add a delay before the underline appears */
+  }
+.nav-btn{
+    padding-top: 14px;
+}
+.nav-btn a{
+    text-decoration: none;
+}
+.section-one-index{
+    margin: 80px 40px 0px 40px;
+}
+.section-one-intro-text{
+    padding: 0px 20px;
+}
+.section-one-intro-text h1{
+    font-size: 40px;
+}
+.section-one-intro-text p{
+    margin-top: 28px;
+    border-bottom: 1.4px solid black;
+    width: 440px;
+    font-size: 21px;
+    text-transform: lowercase;
+}
+video{
+    margin-top: 70px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+video:hover{
+    cursor: pointer;
+}
+.section-two-text-one{
+    /* margin-top: 30px;
+    font-size: 20px;
+    line-height: 1.5; */
+    margin-top: 40px;
+    padding: 0px 250px;
+    text-align: center;
+}
+.section-two-text-one p{
+    font-family: 'Italianno', cursive;
+    font-size: 50px;
+    color: #b0aeae;
+}
+.section-two-text-two{
+    padding-top: 50px;
+}
+.section-two-text-two :nth-child(1){
+    font-size: 25px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.section-two-text-two :nth-child(2){
+    padding-top: 15px;
+    line-height: 1.4;
+    max-width: 950px;
+    font-size: 17px;
+}
+.section-two-text-two :nth-child(3){
+    padding-top: 15px;
+    line-height: 1.4;
+    max-width: 950px;
+    font-size: 17px;
+}
+.section-two-text-two :nth-child(4){
+    padding-top: 15px;
+    line-height: 1.4;
+    max-width: 950px;
+    font-size: 17px;
+}
+.border-section-two{
+    padding-top: 40px;
+    border-bottom: 1px solid #b0aeae;
+}
+.stakeholders{
+    padding-top: 30px;
+}
+.stakeholders-img{
+    display: flex;
+    justify-content: space-between;
+    margin: -5px;
+    padding-bottom: 60px;
+}
+.stakeholders-img img{
+    margin: 0 5px;
+}
+.ActionAid {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.bill{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.GIZ{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.Sida_logo{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.rockefeller{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.UKaid{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.undp{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.unicef{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.usaid{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.wfp{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+footer{
+    padding: 50px 50px 0px 50px ;
+    background-color: black;
+    color: #ffff;
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+}
+footer li{
+    list-style: none;
+    margin: 25px 0;
+}
+footer p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media (max-width: 767px){
+    .nav-links li{
+        font-size: 10px;
+    } 
+}
